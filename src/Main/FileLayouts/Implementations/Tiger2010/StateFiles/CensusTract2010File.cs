@@ -19,7 +19,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
 
             FileName = "tract10.zip";
 
-            SQLCreateTable += "CREATE TABLE `" + OutputTableName + "` (";
+            SQLCreateTable += "CREATE TABLE IF NOT EXISTS `" + OutputTableName + "` (";
             SQLCreateTable += "uniqueId int not null AUTO_INCREMENT,";
             SQLCreateTable += "stateFp10 varchar(2) DEFAULT NULL,";
             SQLCreateTable += "countyFp10 varchar(3) DEFAULT NULL,";

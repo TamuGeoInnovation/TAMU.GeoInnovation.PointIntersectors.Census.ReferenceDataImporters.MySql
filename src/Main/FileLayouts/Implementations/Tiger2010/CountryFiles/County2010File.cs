@@ -19,7 +19,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
             ShouldIncludeArea = true;
             ShouldIncludeCentroid = true;
 
-            SQLCreateTable += "CREATE TABLE `" + OutputTableName + "` (";
+            SQLCreateTable += "CREATE TABLE  IF NOT EXISTS `" + OutputTableName + "` (";
             SQLCreateTable += "stateFp10 varchar(2) DEFAULT NULL,";
             SQLCreateTable += "countyFp10 varchar(3) DEFAULT NULL,";
             SQLCreateTable += "countyNs10 varchar(8) DEFAULT NULL,";

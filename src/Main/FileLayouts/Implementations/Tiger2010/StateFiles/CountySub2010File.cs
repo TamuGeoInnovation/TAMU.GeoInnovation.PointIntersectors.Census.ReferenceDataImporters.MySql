@@ -18,7 +18,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
 
             //ExcludeColumns = new string[] { "Name00_Soundex", "Name00_SoundexDM" };
 
-            SQLCreateTable += "CREATE TABLE `" + OutputTableName + "` (";
+            SQLCreateTable += "CREATE TABLE IF NOT EXISTS `" + OutputTableName + "` (";
             SQLCreateTable += "stateFp10 varchar(2) DEFAULT NULL,";
             SQLCreateTable += "countyFp10 varchar(3) DEFAULT NULL,";
             SQLCreateTable += "cousubFp10 varchar(5) DEFAULT NULL,";

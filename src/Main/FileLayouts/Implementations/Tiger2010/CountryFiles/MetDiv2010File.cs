@@ -13,7 +13,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
 
             FileName = "MetDiv10.zip";
 
-            SQLCreateTable += "CREATE TABLE `" + OutputTableName + "` (";
+            SQLCreateTable += "CREATE TABLE IF NOT EXISTS `" + OutputTableName + "` (";
             SQLCreateTable += "csaFp10 varchar(3) DEFAULT NULL,";
             SQLCreateTable += "cbsaFp10 varchar(5) DEFAULT NULL,";
             SQLCreateTable += "metDivFp10 varchar(5) DEFAULT NULL,";

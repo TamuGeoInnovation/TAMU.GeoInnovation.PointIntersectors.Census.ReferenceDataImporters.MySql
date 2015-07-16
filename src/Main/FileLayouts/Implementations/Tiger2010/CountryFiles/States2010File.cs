@@ -18,7 +18,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
 
             FileName = "state10.zip";
 
-            SQLCreateTable += "CREATE TABLE `" + OutputTableName + "` (";
+            SQLCreateTable += "CREATE TABLE IF NOT EXISTS `" + OutputTableName + "` (";
             SQLCreateTable += "uniqueId int not null AUTO_INCREMENT,";
             SQLCreateTable += "region10 varchar(2) DEFAULT NULL,";
             SQLCreateTable += "division10 varchar(2) DEFAULT NULL,";
