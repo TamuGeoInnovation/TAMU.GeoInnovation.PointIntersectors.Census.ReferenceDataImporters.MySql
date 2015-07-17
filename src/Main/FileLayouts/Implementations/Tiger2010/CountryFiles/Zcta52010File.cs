@@ -22,8 +22,8 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.MySql.Fil
             SQLCreateTable += "intPtLat10 varchar(11) DEFAULT NULL,";
             SQLCreateTable += "intPtLon10 varchar(12) DEFAULT NULL,";
             SQLCreateTable += "shapeType varchar(55), ";
-            SQLCreateTable += "shapeGeog geometry,";
-            SQLCreateTable += "shapeGeom geometry,";
+            SQLCreateTable += "shapeGeog geometry NOT NULL,";
+            SQLCreateTable += "shapeGeom geometry NOT NULL,";
             SQLCreateTable += "PRIMARY KEY  (zcta5ce10)";
             SQLCreateTable += ");";
             /*
